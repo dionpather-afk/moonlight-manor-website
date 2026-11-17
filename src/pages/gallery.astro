@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Gallery | Moonlight Manor" description="A visual introduction to Moonlight Manor and its Karoo setting.">
+  <main><section class="page-hero"><div class="wrap"><span class="eyebrow">A glimpse of the Manor</span><h1>See the charm<br/><em>for yourself.</em></h1></div></section>
+    <section class="section"><div class="wrap"><div class="content"><p>Explore the house, garden, rooms and surrounding Karoo landscape. Property photographs are being prepared for this preview and will be replaced with owner-approved images before the website goes live.</p></div><div class="gallery-grid" style="margin-top:38px">{Array.from({length:6},(_,i)=><div class="gallery-tile" role="img" aria-label={`Moonlight Manor gallery image ${i+1}`}></div>)}</div></div></section>
+  </main>
+</BaseLayout>
